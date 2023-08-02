@@ -1,0 +1,7 @@
+syntax = "proto3";
+package newchain.newchain;
+
+option go_package = "newchain/x/newchain/types";
+
+// Msg defines the Msg service.
+service Msg {}

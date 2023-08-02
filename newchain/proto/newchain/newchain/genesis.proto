@@ -1,0 +1,12 @@
+syntax = "proto3";
+package newchain.newchain;
+
+import "gogoproto/gogo.proto";
+import "newchain/newchain/params.proto";
+
+option go_package = "newchain/x/newchain/types";
+
+// GenesisState defines the newchain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
